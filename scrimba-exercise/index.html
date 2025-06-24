@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+         .container{
+            background-image: linear-gradient(#FFD38A,#FBA91D,#FFD6BB);
+            background-size:cover;
+            background-position: center;
+            height:100vh;
+        }
+
+        .box {   
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* border: 10px solid yellow; */
+            /* padding: 10px; */
+            margin:  auto;
+            
+        } 
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+         h1{
+            padding: 3rem 2rem 2rem 2rem ;
+            text-align: center;
+            font-size: 4rem;
+            color: #656262;
+            /* background-color: green; */
+        }
+        
+        h2 {
+            font-size: 2rem;
+            padding: 1rem;
+            margin-top: 0;
+            /* background-color: red; */
+        }
+    
+        a {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border: 2px gray solid;
+            padding: 2rem;
+            text-decoration: none;
+            color: #808080;
+            transform: scale(1);
+            transition: transform 250ms;
+        }
+
+        a:hover,
+        a:focus {
+            background-color: transparent;
+            color: white;
+            transform: scale(1.1);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1>My Projects</h1>
+    <div class="box">
+        <div class="column">
+            <h2>CSS Projects</h2>
+            <a href="landingPage/landingPage.html">Landing Page</a>
+            <a href="simpleCard/simplecard.html"> Simple Card</a>
+            <a href="DataAnalyticsDashboard/index.html"> Data Analytics Dashboard</a>
+        </div>
+
+
+        <div class="column">
+            <h2>JavaScript Projects</h2>
+            <a href="BasketballScoreBoard/index.html"> Basketball ScoreBoard</a>
+        </div>
+    </div>
+    </div>
+
+    
+</body>
+</html>
