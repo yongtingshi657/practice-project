@@ -10,11 +10,21 @@
             box-sizing: border-box;
             margin: 0;
         }
+        html, body {
+         height: 100%;
+        }
 
-         .container{
+
+        body{
             background-image: linear-gradient(#FFD38A,#FBA91D,#FFD6BB);
             background-size:cover;
             background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            
+        }
+
+        .container {
             height:100vh;
         }
 
@@ -66,6 +76,34 @@
             color: white;
             transform: scale(1.1);
         }
+
+
+    @media (max-width: 650px) {
+        .box{
+            flex-direction: column;
+            padding: 1rem 2rem;
+            margin-top: 0;
+            height: 100%;
+            /* background-color: red; */
+        }
+
+        h1{
+            padding: 2rem 2rem 1rem 2rem;
+            margin-bottom: 0;
+            /* background-color: red; */
+        }
+       
+         .column {
+        height: 50%;
+        overflow-y: auto; /* Allow scrolling if content is too long */
+        padding: 1rem;
+    }
+          a {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    }
 
 
     </style>
