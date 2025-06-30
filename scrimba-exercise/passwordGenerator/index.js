@@ -97,8 +97,10 @@ let againBtn = document.querySelector(".again-btn");
 let resetBtn = document.querySelector(".reset-btn");
 let passwordBox1 = document.querySelector(".password-box-1");
 let passwordBox2 = document.querySelector(".password-box-2");
+let input = document.querySelector("#input-el");
 
-let passwordLength = 15;
+let passwordLength;
+
 // how to make passwordLength a chosbale variable. like i can set the length of password. 
 
 function getRandomCharacter() {
@@ -108,6 +110,14 @@ function getRandomCharacter() {
 
 function generateRandomPassword1() {
   let password = "";
+
+  // if (input.value === ""){
+  //   passwordLength = 15;
+  // } else {
+  //   passwordLength = input.value;
+  // }
+  // input.value=""
+  
   for (let i = 0; i < passwordLength; i++) {
     password += getRandomCharacter();
     console.log(password);
@@ -117,6 +127,13 @@ function generateRandomPassword1() {
 
 function generateRandomPassword2() {
   let password = "";
+  //  if (input.value === ""){
+  //   passwordLength = 15;
+  // } else {
+  //   passwordLength = input.value;
+  // }
+  // input.value="";
+
   for (let i = 0; i < passwordLength; i++) {
     password += getRandomCharacter();
     console.log(password);
@@ -126,6 +143,14 @@ function generateRandomPassword2() {
 }
 
 function generateRandomPassword() {
+ if (input.value === ""){
+    passwordLength = 15;
+  } else {
+    passwordLength = input.value;
+  }
+  input.value="";
+
+
   generateRandomPassword1();
   generateRandomPassword2();
 }
