@@ -23,18 +23,23 @@ let massContainer = document.querySelector(".mass-container")
 console.log(volumeContainer);
 
 lengthBtn.addEventListener("click", function(){
-  volumeContainer.style.display = "none"
-  massContainer.style.display = "none"
+    lengthContainer.style.display = "block" 
+    volumeContainer.style.display = "none"
+    massContainer.style.display = "none"
+
+
 })
 
 volumeBtn.addEventListener("click", function(){
-  lengthContainer.style.display = "none"
-  massContainer.style.display = "none"
+    volumeContainer.style.display = "block" 
+    lengthContainer.style.display = "none"
+    massContainer.style.display = "none"
 })
 
 massBtn.addEventListener("click", function(){
-  lengthContainer.style.display = "none"
-  volumeContainer.style.display = "none"
+    massContainer.style.display = "block" 
+    lengthContainer.style.display = "none"
+    volumeContainer.style.display = "none"
 })
 
 function lengthConvert(){
